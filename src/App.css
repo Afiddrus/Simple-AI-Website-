@@ -44,3 +44,12 @@ body {
 .read-the-docs {
   color: #888;
 }
+
+@keyframes spin {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg9);}
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
