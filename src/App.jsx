@@ -10,8 +10,10 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async() => {
+    event.preventDefault();
     setLoading(true);
-    const ai = await requestToGroqAI(content.value);
+    const content = document.getElementById('content').value;
+    const ai = await requestToGroqAI(content);
     setData(ai);
     setLoading(false);
   };
@@ -19,7 +21,7 @@ function App() {
   return (
     <main className='flex flex-col min-h-[80vh] justify-center items-center max-w-xl w-full mx-auto'>
       <h1 className='text-4xl text-indigo-500'>REACT|GROQ AI</h1>
-      <form className='flex flex-col gap-4 py-4 w-full'>
+      <form className='flex flex-col gap-4 py-4 w-full' onSubmit={handleSubmit}>
         <input 
         placeholder='Ketik Permintaan Disini....'
         className='py-2 px-4 text-md rounded-md'
