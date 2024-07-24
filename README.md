@@ -8,3 +8,6 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 Still On Progress!!!
+Current Progress Right Now:
+1. Add Animation and delay to button
+2. Add Animation to data result
