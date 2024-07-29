@@ -1,1 +1,1 @@
-console.log("Future Update: Add Dark Mode & Light Mode, Add Notification and Settings.");
+console.log("Future Update: Add Dark Mode & Light Mode, Add Notification and Settings");
